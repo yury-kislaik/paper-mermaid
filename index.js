@@ -271,69 +271,41 @@ if (reversed == null) { reversed = false; }
 
 	// dress
 	this.instance = new lib.dress();
-	this.instance.setTransform(226.6,655.75,1,1,0,0,0,173.1,205.2);
+	this.instance.setTransform(222.1,663.8,1,1,0,0,0,173.1,205.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// tshirt
 	this.instance_1 = new lib.tshirt();
-	this.instance_1.setTransform(234.55,149.85);
+	this.instance_1.setTransform(230.05,111.25);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	// skirt
 	this.instance_2 = new lib.skirt();
-	this.instance_2.setTransform(136.3,341.45,1,1,0,0,0,113.4,82.4);
+	this.instance_2.setTransform(178.35,354.05,1,1,0,0,0,113.4,82.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
 	// background
 	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(-4.278,0,0,0.361,5999.6,-191.5)).s().p("Ar7ABIAAgCIX3AAIAAACg");
-	this.shape.setTransform(739.975,15.55);
+	this.shape.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(4.638,0,0,0.361,-5440,-656)).s().p("EgkuBLKMAAAiWTMBJdAAAMAAACWTg");
+	this.shape.setTransform(196.35,481.025);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(4.775,0,0,0.361,-8993.9,-217.7)).s().p("Ar+EOIAAobIAGAAIAAAAIX3AAIAAIbg");
-	this.shape_1.setTransform(739.65,42.7);
+	this.shape_1.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(5.429,0,0,0.508,-10225.2,-306.8)).s().p("AK0F9I4bAAIAAgBIAAgZIAAqfIAAhAIbPAAIAAL5g");
+	this.shape_1.setTransform(747.1875,31.7);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(-4.278,0,0,0.373,5753.3,-189.7)).s().p("Ar5BNIAAAAIgEAAIAAgHIAAiSIX7AAIAACZg");
-	this.shape_2.setTransform(739.8,7.7);
+	this.shape_2.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(0.361,0,0,0.361,-633.6,-656)).s().p("EgeDBLKMAAAiWTMAjsAAAIAAKgIAAAZIAAAAIAAAAIYcAAMAAACLag");
+	this.shape_2.setTransform(623.9,481.025);
 
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(4.928,0,0,0.361,-5756,-663.9)).s().p("EghqBJ8MAAAiT3MBCvAAAIAmAAMAAACT3g");
-	this.shape_3.setTransform(215.525,488.875);
-
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(75.175,0,0,0.361,-90436,-182.8)).s().p("EghXABOIAAicMBCvAAAIAACcg");
-	this.shape_4.setTransform(213.625,7.85);
-
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(5.5,0,0,0.361,-6642.2,-182.8)).s().p("Ag8BOIgmAAIAAicIDFAAIAACcg");
-	this.shape_5.setTransform(437.15,7.85);
-
-	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(0.361,0,0,0.361,-633.4,-663.9)).s().p("EgeGBJ8MAAAiT3ICgAAIV4AAIL2AAIAAIcIAAAAIX/AAMAAACLbg");
-	this.shape_6.setTransform(623.7,488.875);
-
-	this.shape_7 = new cjs.Shape();
-	this.shape_7.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(-0.326,0,0,0.361,501.1,-191.2)).s().p("AF5AFIgBAAIr2AAIAAgJIL6AAIAAAGIADAAIAAADg");
-	this.shape_7.setTransform(625.275,15.2);
-
-	this.shape_8 = new cjs.Shape();
-	this.shape_8.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(0.361,0,0,0.361,-506,-182.8)).s().p("Aq7BOIAAicIV3AAIAACSIAAAKg");
-	this.shape_8.setTransform(517.025,7.85);
-
-	this.shape_9 = new cjs.Shape();
-	this.shape_9.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(-0.326,0,0,0.361,482.5,-183.3)).s().p("Al8BJIAAiSIL5AAIAACSg");
-	this.shape_9.setTransform(625.125,7.35);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(408,481,408.4,481.1);
+p.nominalBounds = new cjs.Rectangle(369.3,474.7,465.09999999999997,487.40000000000003);
 // library properties:
 lib.properties = {
 	id: 'CF42BDB0CCF54FF980D13F8921311F6F',
