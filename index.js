@@ -269,48 +269,64 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		createjs.Touch.enable(stage);
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
 	// dress
 	this.instance = new lib.dress();
-	this.instance.setTransform(222.1,663.8,1,1,0,0,0,173.1,205.2);
+	this.instance.setTransform(338.45,859.85,1.2974,1.2974,0,0,0,173.1,205.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	// tshirt
 	this.instance_1 = new lib.tshirt();
-	this.instance_1.setTransform(230.05,111.25);
+	this.instance_1.setTransform(348.7,142.95,1.2974,1.2974);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 
 	// skirt
 	this.instance_2 = new lib.skirt();
-	this.instance_2.setTransform(178.35,354.05,1,1,0,0,0,113.4,82.4);
+	this.instance_2.setTransform(281.65,458.1,1.2974,1.2974,0,0,0,113.4,82.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
 
 	// background
 	this.shape = new cjs.Shape();
-	this.shape.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(4.638,0,0,0.361,-5440,-656)).s().p("EgkuBLKMAAAiWTMBJdAAAMAAACWTg");
-	this.shape.setTransform(196.35,481.025);
+	this.shape.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(7.044,0,0,0.659,-13253.3,-402.8)).s().p("AvqG+IAAgBIAAggIAAtaIfVAAIAAN7g");
+	this.shape.setTransform(1006.875,44.575);
 
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(5.429,0,0,0.508,-10225.2,-306.8)).s().p("AK0F9I4bAAIAAgBIAAgZIAAqfIAAhAIbPAAIAAL5g");
-	this.shape_1.setTransform(747.1875,31.7);
+	this.shape_1.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(6.017,0,0,0.468,-7057.8,-851.7)).s().p("EgvpBhaMAAAjCzMBfTAAAMAAADCzg");
+	this.shape_1.setTransform(305,623.4);
 
 	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(0.361,0,0,0.361,-633.6,-656)).s().p("EgeDBLKMAAAiWTMAjsAAAIAAKgIAAAZIAAAAIAAAAIYcAAMAAACLag");
-	this.shape_2.setTransform(623.9,481.025);
+	this.shape_2.graphics.bf(img.Bitmap1, null, new cjs.Matrix2D(0.468,0,0,0.468,-820.9,-851.7)).s().p("Egm1BhaMAAAjCzMAuVAAAIAANbIgBAgIABAAIAAABIfWAAMAAAC03g");
+	this.shape_2.setTransform(858.6,623.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(369.3,474.7,465.09999999999997,487.40000000000003);
+p.nominalBounds = new cjs.Rectangle(553.5,623,553.7,623.8);
 // library properties:
 lib.properties = {
 	id: 'CF42BDB0CCF54FF980D13F8921311F6F',
-	width: 816,
-	height: 962,
+	width: 1107,
+	height: 1246,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
